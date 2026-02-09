@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ID Card Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>User Details Form</h2>
+
+    <input type="text" id="name" placeholder="Enter Name"><br>
+    <input type="text" id="father" placeholder="Enter Father Name"><br>
+    <input type="email" id="email" placeholder="Enter Email"><br>
+
+    <!-- NIC 13 digits -->
+    <input type="text" id="nic" placeholder="Enter NIC (13 digits)" maxlength="13"><br>
+
+    <!-- Phone 11 digits -->
+    <input type="text" id="phone" placeholder="Enter Phone (11 digits)" maxlength="11"><br>
+
+    <input type="date" id="dob"><br>
+
+    <button onclick="previewData()">Preview</button>
+    <button onclick="clearForm()">Clear</button>
+    <button onclick="submitForm()">Submit</button>
+    <p id="submitTime"></p>
+</div>
+
+
+<!-- ID CARD -->
+<div class="id-card" id="idCard">
+    <h2>ID CARD</h2>
+    <p><b>Name:</b> <span id="idName"></span></p>
+    <p><b>Email:</b> <span id="idEmail"></span></p>
+    <p><b>NIC:</b> <span id="idNic"></span></p>
+    <p><b>Phone:</b> <span id="idPhone"></span></p>
+    <p><b>Age:</b> <span id="idAge"></span></p>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
