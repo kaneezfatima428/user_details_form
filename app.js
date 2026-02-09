@@ -7,7 +7,7 @@ function previewData(){
     var phone = document.getElementById("phone").value;
     var dob = document.getElementById("dob").value;
 
-    // Age Calculator
+    
     var birthDate = new Date(dob);
     var today = new Date();
     var age = today.getFullYear() - birthDate.getFullYear();
@@ -18,7 +18,7 @@ function previewData(){
         age--;
     }
 
-    // Name + Father Name in one line
+    
     var fullName = name + " " + father;
 
     document.getElementById("idName").innerHTML = fullName;
